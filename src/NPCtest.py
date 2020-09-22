@@ -40,6 +40,9 @@ class World(object):
 
     return loc_map
 
+  def getRaw(self,row,col):
+    return self._map[row][col]
+
   def getSymbol(self,row,col):
     if self._map[row][col] == 0: # Wall
       return ('\u2588', 'white', 'bold')
@@ -72,10 +75,18 @@ if __name__ == "__main__":
   #messages.append(prompt)
 
   blt.open()
-  blt.set("window: fullscreen=true; font: UbuntuMono-R.ttf, size=10x20") 
-  blt.set("italic font: VeraMoIt.ttf, size=10x20")
-  blt.set("bold font: VeraMoBd.ttf, size=10x20")
-  blt.set("huge font: VeraMono.ttf, size=20x40, spacing=2x2")
+#  blt.set("window: fullscreen=true; font: UbuntuMono-R.ttf, size=10x20") 
+#  blt.set("italic font: VeraMoIt.ttf, size=10x20")
+#  blt.set("bold font: VeraMoBd.ttf, size=10x20")
+#  blt.set("huge font: VeraMono.ttf, size=20x40, spacing=2x2")
+  blt.set("U+E100: Runic.png, size=8x16")
+  blt.set("U+E200: Tiles.png, size=32x32, align=top-left")
+  blt.set("U+E300: fontawesome-webfont.ttf, size=24x24, spacing=3x2, codepage=fontawesome-codepage.txt")
+  blt.set("window: size=80x25, cellsize=auto, title='NPC test'; font: default")
+
+
+
+  blt.composition(True)
 #  blt.set("font: size=32x32;")
 
 #  blt.color("light gray")
@@ -146,18 +157,32 @@ if __name__ == "__main__":
       blt.color("light orange")
       for i in range(world._height):
         for j in range(world._width):
-          symbol = world.getSymbol(i,j)
-          if symbol[2]:
-            blt.puts(j,i,"[color={0}][font={1}]{2}[/font][/color]".format(symbol[1],symbol[2],symbol[0]))
+          rawval = world.getRaw(i,j)
+
+          if rawval == 0:
+            blt.put(j,i,0xE200+8)
+          elif rawval == 1:
+            blt.put(j,i,0xE200+0)
+          elif rawval == 2:
+            blt.put(j,i,0xE200+4)
           else:
-            blt.puts(j,i,"[color={0}]{1}[/color]".format(symbol[1],symbol[0]))
+            blt.put(j,i,0xE200+15)
+
+
+
+#          symbol = world.getSymbol(i,j)
+#          if symbol[2]:
+#            blt.puts(j,i,"[color={0}][font={1}]{2}[/font][/color]".format(symbol[1],symbol[2],symbol[0]))
+#          else:
+#            blt.puts(j,i,"[color={0}]{1}[/color]".format(symbol[1],symbol[0]))
 
 
       blt.color("light gray")
       blt.printf(1, 0, 'Hello, world!')
 
       blt.color("yellow")
-      blt.puts(player_x, player_y, "@")
+      #blt.puts(player_x, player_y, "@")
+      blt.put(player_x, player_y, 0xE200+10)
 
       for npc in npcs:
         blt.color("light orange")
@@ -305,5 +330,7 @@ if __name__ == "__main__":
 
 
         
+  blt.set("U+E100: none; U+E200: none; U+E300: none")        
+  blt.composition(False)
   blt.close()
 
