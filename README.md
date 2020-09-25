@@ -1,18 +1,13 @@
-# Team Professorson
+# Team Name
 
-This project will focus on creating a 'simple' roguelike-style game that forces me to learn [BearLibTerminal](http://foo.wyrd.name/en:bearlibterminal) and [Tracery](http://tracery.io/).  It will shake the world with its simpilicity and prototypical nature.
-
-THIS IS MY UPDATE. CLASS ENDS IN 5 MINUTES.  have a good evening.  creativity is waning :(.
+Project description (~1 paragraph)
 
 ## Team Members and Roles
 
-* Erik Fredericks (all roles)
+* Member 1 (Role 1, Role 2)
+* Member 2 (Role 3, Role 4)
+* Member 3 (Role 5, Role 6)
 
 ## Prerequisites
 
-* Python 3.7+
-* See `requirements.txt`
-
 ## Run Instructions
-
-* TBD
