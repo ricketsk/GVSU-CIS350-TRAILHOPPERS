@@ -1,6 +1,6 @@
-Team name:
+Team name: TrailHoppers
 
-Team members:
+Team members: Liam Mazure, Kassidy Ricketson, KeJuan Farrell-Bey, and Saif Fayed
 
 # Introduction
 
