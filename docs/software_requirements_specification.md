@@ -1,7 +1,6 @@
 # Overview
 
-<Describe the purpose of this document in 1 paragraph of less … hint: it is
-your SRS>
+This is the document containing the software requirements for our application.
 
 # Functional Requirements
 1. Social Aspect
