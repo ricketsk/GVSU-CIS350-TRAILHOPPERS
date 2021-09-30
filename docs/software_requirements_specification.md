@@ -4,10 +4,10 @@ This is the document containing the software requirements for our application.
 
 # Functional Requirements
 1. Social Aspect
-  1. Users shall be able to track their trail data
-  2. Users shall be able to see average runtime of the trail
-  3. There shall be a rating system for trails
-  4. There shall be a ranking system for trail difficulty
+   1. Users shall be able to track their trail data
+   2. Users shall be able to see average runtime of the trail
+   3. There shall be a rating system for trails
+   4. There shall be a ranking system for trail difficulty
   
 2. Maps/Trails
   i. Maps shall be connected to Google maps
