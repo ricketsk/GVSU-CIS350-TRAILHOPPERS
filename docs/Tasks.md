@@ -1,31 +1,31 @@
 # Tasks
 
 ## Learn Kivvy
-2) Description: Learn the basics to the Kivvy framework 
-3) Expected time to complete: 3 weeks
-4) Responsible: All
+1) Description: Learn the basics to the Kivvy framework 
+2) Expected time to complete: 3 weeks
+3) Responsible: All
 
 ## Map API integration
-2) Description: 
-3) Expected time to complete: 2 weeks
-4) Responsible: Kassidy, Liam
+1) Description: 
+2) Expected time to complete: 2 weeks
+3) Responsible: Kassidy, Liam
 
 ## Interface
-2) Description: 
-3) Expected time to complete: 2 weeks
-4) Responsible: Saif
+1) Description: 
+2) Expected time to complete: 2 weeks
+3) Responsible: Saif
 
 ## Widgets
-2) Description: 
-3) Expected time to complete: 2 weeks
-4) Responsible: KeJuan, Liam
+1) Description: 
+2) Expected time to complete: 2 weeks
+3) Responsible: KeJuan, Liam
 
 ## Backend Testing
-2) Description: 
-3) Expected time to complete: 2 weeks
-4) Responsible: All
+1) Description: 
+2) Expected time to complete: 2 weeks
+3) Responsible: All
 
 ## Frontend Testing
-2) Description: 
-3) Expected time to complete: 2 weeks
-4) Responsible: All
+1) Description: 
+2) Expected time to complete: 2 weeks
+3) Responsible: All
