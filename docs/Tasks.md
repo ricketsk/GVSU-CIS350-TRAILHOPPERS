@@ -31,13 +31,13 @@
 3) Responsible: All
 
 ## Completed
-1)Requirements 
-2)Use-Cases
+1) Requirements 
+2) Use-Cases
 
 ## Not Completed
-1.Learn Kivy
-2.Map API Integration
-3.Interface
-4.Widgets
-5.Backend Testing
-6.Frontend Testing
+1) Learn Kivy
+2) Map API Integration
+3) Interface
+4) Widgets
+5) Backend Testing
+6) Frontend Testing
