@@ -11,7 +11,7 @@
 3) Responsible: Kassidy, Liam
 
 ## Interface
-1) Description: 
+1) Description: Learn how to organize the interface to enable the placemant of widgets and user interaction.
 2) Expected time to complete: 2 weeks
 3) Responsible: Saif
 
@@ -33,7 +33,6 @@
 ## Completed
 1)Requirements 
 2)Use-Cases
-3)
 
 ## Not Completed
 1)Learn Kivy
