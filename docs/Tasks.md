@@ -1,5 +1,15 @@
 # Tasks
 
+## Requirements
+1) Description: Created the breakdown of what we wanted in the app 
+2) Expected time to complete: 2 weeks
+3) Responsible: All
+
+## Use-Cases
+1) Description: Organized and demonstrated the intercation of the use cases with the actors
+2) Expected time to complete: 1 weeks
+3) Responsible: All
+
 ## Learn Kivy
 1) Description: Learning the basics of Kivy. Watching videos and doing research on the framework and what is available through it. 
 2) Expected time to complete: 3 weeks
