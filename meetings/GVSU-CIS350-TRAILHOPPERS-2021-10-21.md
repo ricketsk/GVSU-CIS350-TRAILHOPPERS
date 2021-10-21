@@ -15,7 +15,7 @@ Time: 3:00 pm
 Discussion points: 
 
 * Presentation
-* Finishing up hw6
+* Finishing up hw4
 
 Goals for next week (include responsibilities)
 
