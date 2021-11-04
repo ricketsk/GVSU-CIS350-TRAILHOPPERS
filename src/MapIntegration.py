@@ -4,6 +4,8 @@ from kivy_garden.mapview import MapView, MapSource
 
 class MapMainApp(App):
     
+    api_key = "AIzaSyBdwkw6tlqH340Br0Hz1h1AieGkQg98f3I"
+
     def build(self):
         box_layout = BoxLayout()
         map_view = MapView(lat=42.9641, lon=-85.8890, zoom=13)
