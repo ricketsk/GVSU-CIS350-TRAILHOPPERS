@@ -6,7 +6,7 @@ class MapMainApp(App):
     
     def build(self):
         box_layout = BoxLayout()
-        map_view = MapView(lat=50.3, lon=3.05, zoom=13)
+        map_view = MapView(lat=42.9641, lon=-85.8890, zoom=13)
         map_view.map_source = "osm"
         box_layout.add_widget(map_view)
         return box_layout
