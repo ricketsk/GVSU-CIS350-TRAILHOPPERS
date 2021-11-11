@@ -19,7 +19,7 @@ def getLocationByAddress(address):
     try:
         return app.geocode(address).raw
     except:
-        return #getLocationByAddress(address)
+        return getLocationByAddress(address)
 
 location = getLocationByAddress(address)
 latitude = location["lat"]
