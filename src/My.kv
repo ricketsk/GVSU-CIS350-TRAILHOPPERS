@@ -1,0 +1,110 @@
+WindowManager:
+    StartWindow:
+    MainWindow:
+
+<StartWindow>:
+    firstName: firstName
+    lastName: lastName
+    email: email
+    passWord: passWord
+
+    name: "start"
+
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+        
+        GridLayout:
+            cols:2
+
+            Label: 
+                text: "First Name: "
+
+            TextInput:
+                id: firstName
+                multiline:False
+
+            Label: 
+                text: "Last Name: "
+
+            TextInput:
+                id: lastName
+                multiline:False
+
+            Label: 
+                text: "Email: "
+
+            TextInput:
+                id: email
+                multiline:False
+
+            Label:
+                text: "Password: "
+                
+            TextInput:
+                id: passWord
+                multiline:False
+
+
+        Button:
+            text:"Create Account"
+            on_release: 
+                root.button()
+                app.root.current = "main"
+
+
+<MainWindow>:
+    name: "main"
+
+    MDBottomNavigation:
+        panel_color: .2, .2, .2, 1
+
+
+        MDBottomNavigationItem:
+            name: 'screen 1'
+            text: 'HOME'   
+            icon: 'home-variant-outline'
+            MDLabel:
+                text: 'Map Here'
+                halign: 'center'
+
+
+        MDBottomNavigationItem:
+            name: 'screen 2'
+            text: 'SEARCH'
+            icon: 'magnify'
+            # on_enter: root.switch()     
+            MDLabel:
+                text: 'Search Trails Here'
+                halign: 'center'
+
+
+        MDBottomNavigationItem:
+            name: 'screen 3'
+            text: 'PROFILE'
+            icon: 'account-circle-outline'
+            MDLabel:
+                text: 'Profile Info Here'
+                halign: 'center'
+
+        
+
+        
+
+
+
+
+   
+
+
+        
+
+
+    
+
+    
+
+            
+
+            
+
