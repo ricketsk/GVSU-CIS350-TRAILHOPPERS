@@ -6,31 +6,36 @@ class DatabaseMainApp(App):
     def build(self):
 
         #Define connection and cursor
-        connection = sqlite3.conncet('TrailHoppers_db.db')
+        connection = sqlite3.connect('TrailHoppers_db.db')
+    
 
         c = connection.cursor()
+        print("connected to SQLite")
 
-        c.execute("""CREATE TABLE if not exist users(
-                Username text NOT NULL,
-                Password text NOT NULL,
+        c.execute("""CREATE TABLE if not exists users(
                 User_ID integer PRIMARY KEY,
-                First_name text,
-                Last_name text,
-                Email text,
-                Phone_num text
+                Username text NOT NULL UNIQUE,
+                Password text NOT NULL UNIQUE,
+                First_name text NOT NULL,
+                Last_name text NOT NULL,
+                Email text UNIQUE,
+                Phone_num text UNIQUE
                 )
         """)
 
-        c.execute("""CREATE TABLE if not exist trails(
-                Difficulty integer
-                User_rating integer
-                trail_length real
-                Elevation interger
+        c.execute("""CREATE TABLE if not exists trails(
+                Trail text NOT NULL,
+                Difficulty integer,
+                User_rating integer,
+                trail_length real,
+                Elevation interger,
                 Trail_type text
         )""")
 
-        c.execute("""CREATE TABLE if not exist social(
-                Completed_trials 
+        c.execute("""CREATE TABLE if not exists social(
+                Completed_trials NULL,
+                Liked_trails NULL,
+                trial_times REAL
 
         )""")
 
@@ -40,10 +45,10 @@ class DatabaseMainApp(App):
         #close connection
         connection.close()
 
-        return Builder.load_file('Trailhoppers_db.kv')
+        return Builder.load_file('My.kv')
 
 
-    def submit(self):
+    def First_submit(self):
         
         #Define connection and cursor
         connection = sqlite3.connct('Users_db.db')
@@ -51,16 +56,16 @@ class DatabaseMainApp(App):
         c = connection.cursor()
 
         #Add a record
-        c.execute("INSERT INTO users VALUES (:first)",
+        c.execute("INSERT INTO users VALUES (First_name)",
         {
-            'first': self.root.ids.word_input.text,
+            'first': self.root.ids.firstName.text,
         })
 
         #adds message 
-        self.root.ids.word_label.text = f'{self.root.ids.word_input.text} Added'
+        self.root.ids.firstName.text = f'{self.root.ids.firstName.text} Added'
 
         #clear input box
-        self.root.ids.word_input.text = ''
+        self.root.ids.firstName.text = ''
 
 
         #commit changes
@@ -70,6 +75,3 @@ class DatabaseMainApp(App):
         connection.close()
 
 
-
-if __name__ == '__main__':
-    DatabaseMainApp().run()
