@@ -11,6 +11,13 @@ class WelcomeWindow(Screen):
     pass 
 
 class LoginWindow(Screen):
+    userName = ObjectProperty(None)
+    passW = ObjectProperty(None)
+    def button(self):
+        print("Username:", self.userName.text,
+        "Password:", self.passW.texr)
+        self.userName.text = ""
+        self.passW.text = ""
     pass
 
 class StartWindow(Screen):

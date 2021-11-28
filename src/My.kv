@@ -18,6 +18,10 @@ WindowManager:
                 app.root.current = "logging"
 
 <LoginWindow>:
+
+    userName: userName
+    passW: passW
+
     name: "logging"
     BoxLayout:
         size_hint: .8, .8
@@ -31,7 +35,7 @@ WindowManager:
             required: True 
             line_color_normal: 1, 1, 0, 1
         MDTextField:
-            id: pass
+            id: passW
             hint_text: "Password"
             #max_text_length: 10
             required: True 
