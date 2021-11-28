@@ -1,6 +1,52 @@
 WindowManager:
+    WelcomeWindow:
+    LoginWindow:
     StartWindow:
     MainWindow:
+
+<WelcomeWindow>:
+    name: "welcome"
+    BoxLayout:
+        size_hint: .8, .8
+        pos_hint:{'center_x': 0.5, 'center_y': 0.5}
+        spacing: dp(40)
+        orientation: 'vertical'
+        MDRaisedButton:
+            text: "Let us go!"
+            md_bg_color: 1, 0, 1, 1
+            on_release: 
+                app.root.current = "logging"
+
+<LoginWindow>:
+    name: "logging"
+    BoxLayout:
+        size_hint: .8, .8
+        pos_hint:{'center_x': 0.5, 'center_y': 0.5}
+        spacing: dp(40)
+        orientation: 'vertical'
+        MDTextField:
+            id: userName
+            hint_text: "Userame"
+            max_text_length: 10
+            required: True 
+            line_color_normal: 1, 1, 0, 1
+        MDTextField:
+            id: pass
+            hint_text: "Password"
+            #max_text_length: 10
+            required: True 
+            line_color_normal: 1, 1, 0, 1
+        MDRaisedButton:
+            text: "Log In"
+            md_bg_color: 1, 0, 1, 1
+            on_release: 
+                app.root.current = "main"
+        MDRaisedButton:
+            text: "Sign Up"
+            md_bg_color: 1, 0, 1, 1
+            on_release: 
+                app.root.current = "start"
+
 
 <StartWindow>:
     firstName: firstName
@@ -10,47 +56,58 @@ WindowManager:
 
     name: "start"
 
-    GridLayout:
-        cols:1
-        size: root.width, root.height
-        
-        GridLayout:
-            cols:2
+    BoxLayout:
+        size_hint: .8, .8
+        pos_hint:{'center_x': 0.5, 'center_y': 0.5}
+        spacing: dp(40)
+        orientation: 'vertical'
+        MDTextField:
+            id: firstName
+            hint_text: "First Name"
+            max_text_length: 10
+            required: True 
+            line_color_normal: 1, 1, 0, 1
 
-            Label: 
-                text: "First Name: "
+            #helper_text: "or click on forgot username"
+            #helper_text_mode: "on_focus"
+            #icon_right: "android"
+            #icon_right_color: app.theme_cls.primary_color
 
-            TextInput:
-                id: firstName
-                multiline:False
+        MDTextField:
+            id: lastName
+            hint_text: "Last Name"
+            max_text_length: 10
+            required: True 
+            line_color_normal: 1, 1, 0, 1
 
-            Label: 
-                text: "Last Name: "
+        MDTextField:
+            id: createUserName
+            hint_text: "Username"
+            max_text_length: 10
+            required: True 
+            line_color_normal: 1, 1, 0, 1
 
-            TextInput:
-                id: lastName
-                multiline:False
+        MDTextField:
+            id: email
+            hint_text: "Email"
+            #max_text_length: 12
+            required: True 
+            line_color_normal: 1, 1, 0, 1
 
-            Label: 
-                text: "Email: "
+        MDTextField:
+            id: passWord
+            hint_text: "Password"
+            #max_text_length: 12
+            required: True 
+            line_color_normal: 1, 1, 0, 1
 
-            TextInput:
-                id: email
-                multiline:False
-
-            Label:
-                text: "Password: "
-                
-            TextInput:
-                id: passWord
-                multiline:False
-
-
-        Button:
-            text:"Create Account"
+        MDRaisedButton:
+            text: "Create Account"
+            md_bg_color: 1, 0, 1, 1
             on_release: 
                 root.button()
                 app.root.current = "main"
+        
 
 
 <MainWindow>:
