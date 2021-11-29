@@ -1,14 +1,24 @@
-from logging import Manager
 from kivymd.app import MDApp
-from kivy.uix.label import Label
-from kivy.uix.gridlayout import GridLayout
-from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
 from kivy.uix.widget import Widget
 from kivy.properties import ObjectProperty
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.core.window import Window
+from kivymd.theming import ThemeManager
+
+class WelcomeWindow(Screen):
+    pass 
+
+class LoginWindow(Screen):
+    userName = ObjectProperty(None)
+    passW = ObjectProperty(None)
+    def button(self):
+        print("Username:", self.userName.text,
+        "Password:", self.passW.texr)
+        self.userName.text = ""
+        self.passW.text = ""
+    pass
 
 class StartWindow(Screen):
     firstName = ObjectProperty(None)
@@ -40,7 +50,9 @@ class WindowManager(ScreenManager):
 
 class MyApp(MDApp):
     def build(self):
+        theme_cls = ThemeManager()
         self.theme_cls.primary_palette = "Green"
+        self.theme_cls.accent_palette = "Blue"
         self.theme_cls.theme_style = "Dark"
         Builder.load_file("My.kv")
         
