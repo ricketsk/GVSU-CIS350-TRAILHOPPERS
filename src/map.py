@@ -61,7 +61,7 @@ class MapMainApp(App):
     def build(self):
 
         boxLayout = BoxLayout()
-        mapView = MapView(lat=latitiude,lon=longitude, zoom=16)
+        mapView = MapView(lat=latitiude,lon=longitude, zoom=14)
         mapView.map_source = "osm"
         map_marker = MapMarker()
         map_marker.lat = latitiude
