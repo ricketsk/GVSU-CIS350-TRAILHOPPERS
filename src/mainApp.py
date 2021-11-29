@@ -6,6 +6,7 @@ from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.core.window import Window
 from kivymd.theming import ThemeManager
+import Database
 
 class WelcomeWindow(Screen):
     pass 
