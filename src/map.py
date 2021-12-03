@@ -5,7 +5,10 @@ import geocoder
 from kivy_garden.mapview.view import MapMarker
 import requests, json
 import googlemaps
+import time
 from datetime import datetime
+from geopy.location import Location
+from geopy.geocoders import Nominatim
 
 api_key = "AIzaSyBdwkw6tlqH340Br0Hz1h1AieGkQg98f3I"
 
@@ -49,25 +52,46 @@ input = input("Which trail would you like to go to? ")
 print("Going to: " + input)
 
 
+app = Nominatim(user_agent="tutorial")
+location = app.geocode(input).raw
+
+address = input
+
+def getLocationByAddress(address):
+    app = Nominatim(user_agent="tutorial2")
+    time.sleep(1)
+    try:
+        return app.geocode(address).raw
+    except:
+        return getLocationByAddress(address)
+
+location = getLocationByAddress(address)
+destinationLatitude = location["lat"]
+destinationLongitude = location["lon"]
 
 now = datetime.now()
-directions_result = gmaps.directions((latitiude,longitude), input, mode="driving",departure_time=now)
+directions_result = gmaps.directions((latitiude,longitude), (destinationLatitude,destinationLongitude), mode="driving",departure_time=now)
 print(directions_result[0]['legs'][0]['distance']['text'])
 print(directions_result[0]['legs'][0]['duration']['text'])
-
 
 class MapMainApp(App):
 
     def build(self):
 
         boxLayout = BoxLayout()
-        mapView = MapView(lat=latitiude,lon=longitude, zoom=16)
+        mapView = MapView(lat=latitiude,lon=longitude, zoom=11)
+        mapView.double_tap_zoom = True
         mapView.map_source = "osm"
         map_marker = MapMarker()
         map_marker.lat = latitiude
         map_marker.lon = longitude
-        map_marker.source = "mapmarker.jpeg"
+        map_marker2 = MapMarker()
+        map_marker2.lat = destinationLatitude
+        map_marker2.lon = destinationLongitude
+        map_marker.source = "map-marker.png"
+        map_marker2.source = "map-marker2.png"
         mapView.add_widget(map_marker)
+        mapView.add_widget(map_marker2)
         boxLayout.add_widget(mapView)
         return boxLayout
         
