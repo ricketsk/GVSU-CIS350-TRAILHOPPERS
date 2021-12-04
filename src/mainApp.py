@@ -7,6 +7,7 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.core.window import Window
 from kivymd.theming import ThemeManager
 import Database
+#from map import MapMainApp
 
 class WelcomeWindow(Screen):
     pass 
@@ -43,6 +44,9 @@ class MainWindow(Screen):
     #self.theme_cls.primary_palette = "Green"
     pass
 
+#class MapMainApp(Screen):
+    pass
+
 class WindowManager(ScreenManager):
     pass
 
@@ -54,7 +58,7 @@ class MyApp(MDApp):
         theme_cls = ThemeManager()
         self.theme_cls.primary_palette = "Green"
         self.theme_cls.accent_palette = "Blue"
-        self.theme_cls.theme_style = "Dark"
+        self.theme_cls.theme_style = "Light"
         Builder.load_file("My.kv")
         
         

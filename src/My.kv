@@ -11,9 +11,16 @@ WindowManager:
         pos_hint:{'center_x': 0.5, 'center_y': 0.5}
         spacing: dp(40)
         orientation: 'vertical'
+        MDLabel:
+            text: "TrailHopper"
+            halign: "center"
+            theme_text_color: "Custom"
+            text_color: 65/255.0, 185/255.0, 105/255.0, 1
+            font_style: 'Button'
+            font_size: 70
         MDRaisedButton:
             text: "Let us go!"
-            md_bg_color: 1, 0, 1, 1
+            md_bg_color: 65/255.0, 185/255.0, 105/255.0, 1
             on_release: 
                 app.root.current = "logging"
 
@@ -33,21 +40,21 @@ WindowManager:
             hint_text: "Username"
             max_text_length: 10
             required: True 
-            line_color_normal: 1, 1, 0, 1
+            line_color_normal: 215/255.0, 185/255.0, 105/255.0, 1
         MDTextField:
             id: passW
             hint_text: "Password"
             #max_text_length: 10
             required: True 
-            line_color_normal: 1, 1, 0, 1
+            line_color_normal: 215/255.0, 185/255.0, 105/255.0, 1
         MDRaisedButton:
             text: "Log In"
-            md_bg_color: 1, 0, 1, 1
+            md_bg_color: 65/255.0, 185/255.0, 105/255.0, 1
             on_release: 
                 app.root.current = "main"
         MDRaisedButton:
             text: "Sign Up"
-            md_bg_color: 1, 0, 1, 1
+            md_bg_color: 65/255.0, 185/255.0, 105/255.0, 1
             on_release: 
                 app.root.current = "start"
 
@@ -70,7 +77,7 @@ WindowManager:
             hint_text: "First Name"
             max_text_length: 10
             required: True 
-            line_color_normal: 1, 1, 0, 1
+            line_color_normal: 215/255.0, 185/255.0, 105/255.0, 1
 
             #helper_text: "or click on forgot username"
             #helper_text_mode: "on_focus"
@@ -82,21 +89,21 @@ WindowManager:
             hint_text: "Last Name"
             max_text_length: 10
             required: True 
-            line_color_normal: 1, 1, 0, 1
+            line_color_normal: 215/255.0, 185/255.0, 105/255.0, 1
 
         MDTextField:
             id: createUserName
             hint_text: "Username"
             max_text_length: 10
             required: True 
-            line_color_normal: 1, 1, 0, 1
+            line_color_normal: 215/255.0, 185/255.0, 105/255.0, 1
 
         MDTextField:
             id: email
             hint_text: "Email"
             #max_text_length: 12
             required: True 
-            line_color_normal: 1, 1, 0, 1
+            line_color_normal: 215/255.0, 185/255.0, 105/255.0, 1
 
         MDTextField:
             id: passWord
@@ -104,11 +111,11 @@ WindowManager:
             #max_text_length: 12
             password: True
             required: True 
-            line_color_normal: 1, 1, 0, 1
+            line_color_normal: 215/255.0, 185/255.0, 105/255.0, 1
 
         MDRaisedButton:
             text: "Create Account"
-            md_bg_color: 1, 0, 1, 1
+            md_bg_color: 65/255.0, 185/255.0, 105/255.0, 1
             on_press:
                 app.Submit()
             on_release: 
