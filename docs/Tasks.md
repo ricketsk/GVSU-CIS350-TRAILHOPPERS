@@ -43,11 +43,13 @@
 ## Completed
 1) Requirements 
 2) Use-Cases
+3) Learned Kivy
+4) Integrated Google Maps
+5) Interface has been made
 
 ## Not Completed
-1) Learn Kivy
-2) Map API Integration
-3) Interface
-4) Widgets
-5) Backend Testing
-6) Frontend Testing
+1) StopWatch widget
+2) Backend Testing
+3) Frontend Testing
+4) Created a database for storing user information
+5) User Social Interaction
