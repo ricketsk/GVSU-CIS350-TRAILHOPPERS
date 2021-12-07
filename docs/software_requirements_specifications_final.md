@@ -8,6 +8,7 @@ This document bring together the requirements set for our Trailhoppers project e
   
 ## Functional Requirements
 ### Social Aspect
+| ID | Requirement |
 | :-------------: | :----------: |
 | FR1 | Users shall be able to track their trail data. |
 | FR2 | Users shall be able to see average runtime of the trail. |
