@@ -1,10 +1,10 @@
 # Overview
 
-This document bring together the requirements set for our Trailhoppers project earlier in the semester along with the other documents completed to ensure our understanding of the many stages to the software development process.
+This document brings together the requirements set for our Trailhoppers project earlier in the semester along with the other documents completed to ensure our understanding of the many stages to the software development process.
 
 # Software Requirements
 
-<Describe the structure of this section>
+Below are our 15 Functional and 15 Non-Functional requirements 
   
 ## Functional Requirements
 ### Social Aspect
