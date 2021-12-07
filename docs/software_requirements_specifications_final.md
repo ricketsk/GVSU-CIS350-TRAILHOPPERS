@@ -7,7 +7,7 @@ your SRS>
 
 <Describe the structure of this section>
   
-##Functional Requirements
+## Functional Requirements
 ###<Name of Feature 1>
 | ID | Requirement |
 | :-------------: | :----------: |
@@ -22,7 +22,7 @@ your SRS>
 | FR5 | <Requirement 2> |
 | FR6 | <Requirement 3> |
 | … | … |
-##Non-Functional Requirements
+## Non-Functional Requirements
 ###<Name of Feature 1>
 | ID | Requirement |
 | :-------------: | :----------: |
@@ -31,8 +31,9 @@ your SRS>
 | NFR3 | < Non-Functional Requirement 3> |
 | … | … |
 
-#Software Artifacts
+# Software Artifacts
   
 <Describe the purpose of this section>
   
 * [Use Case Diagrams](https://github.com/ricketsk/GVSU-CIS350-TRAILHOPPERS/blob/master/artifacts/use_case_diagrams/CIS%20350%20Use-Case%20Diagrams.pdf)
+* [Use Case Description](https://github.com/ricketsk/GVSU-CIS350-TRAILHOPPERS/blob/master/artifacts/use_case_diagrams/Use_Case_description.md)
