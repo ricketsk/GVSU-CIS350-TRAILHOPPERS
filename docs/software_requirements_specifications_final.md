@@ -43,7 +43,7 @@ This document bring together the requirements set for our Trailhoppers project e
 | NFR4 | Username shall not contain your password. |
 | NFR5 | Users shall not have the username of another user. |
 
-### <Name of Feature 2>
+### Use of program
 | ID | Requirement |
 | :-------------: | :----------: |
 | NFR6 | Buttons shall be clickable on first attempt. |
@@ -52,7 +52,7 @@ This document bring together the requirements set for our Trailhoppers project e
 | NFR9 | Users shall be able to use the tab key between text boxes. |
 | NFR10 | Users shall be able to update their own stats upon completion of a trail. |
 
-### <Name of Feature 3>
+### Privacy
 | ID | Requirement |
 | :-------------: | :----------: |
 | NFR11 | Users shall not be able to see other users exact or approximate location. |
