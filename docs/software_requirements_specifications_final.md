@@ -7,8 +7,7 @@ This document bring together the requirements set for our Trailhoppers project e
 <Describe the structure of this section>
   
 ## Functional Requirements
-### <Name of Feature 1>
-| ID | Requirement |
+### Social Aspect
 | :-------------: | :----------: |
 | FR1 | Users shall be able to track their trail data. |
 | FR2 | Users shall be able to see average runtime of the trail. |
@@ -16,7 +15,7 @@ This document bring together the requirements set for our Trailhoppers project e
 | FR4 | There shall be a ranking system for trail difficulty. |
 | FR5 | Users shall be able to recommend the trail to others. |
 
-### <Name of Feature 2>
+### Maps/Trails
 | ID | Requirement |
 | :-------------: | :----------: |
 | FR6 | Maps shall be connected to Google maps. |
@@ -25,7 +24,7 @@ This document bring together the requirements set for our Trailhoppers project e
 | FR9 | Users shall be able to get directions to trails. |
 | FR10 | There shall be a marker for users current location. |
 
-### <Name of Feature 3>
+### The look of the app
 | ID | Requirement |
 | :-------------: | :----------: |
 | FR11 | Background of home screen shall be the map. |
@@ -35,7 +34,7 @@ This document bring together the requirements set for our Trailhoppers project e
 | FR15 | There shall be a similar color scheme throughout the app. |
 
 ## Non-Functional Requirements
-### <Name of Feature 1>
+### User Data
 | ID | Requirement |
 | :-------------: | :----------: |
 | NFR1 | Users logins passwords shall be 8 alphanumeric characters. |
