@@ -30,6 +30,9 @@ your SRS>
 | NFR2 | < Non-Functional Requirement 2> |
 | NFR3 | < Non-Functional Requirement 3> |
 | … | … |
+
 #Software Artifacts
+  
 <Describe the purpose of this section>
-* [I am a link](to_some_file.pdf)
+  
+* [Use Case Diagrams](https://github.com/ricketsk/GVSU-CIS350-TRAILHOPPERS/blob/master/artifacts/use_case_diagrams/CIS%20350%20Use-Case%20Diagrams.pdf)
