@@ -15,7 +15,7 @@ This document bring together the requirements set for our Trailhoppers project e
 | FR3 | There shall be a rating system for trails. |
 | FR4 | There shall be a ranking system for trail difficulty. |
 | FR5 | Users shall be able to recommend the trail to others. |
-| … | … |
+
 ### <Name of Feature 2>
 | ID | Requirement |
 | :-------------: | :----------: |
@@ -24,7 +24,7 @@ This document bring together the requirements set for our Trailhoppers project e
 | FR8 | Users shall be able to search for trails. |
 | FR9 | Users shall be able to get directions to trails. |
 | FR10 | There shall be a marker for users current location. |
-| … | … |
+
 ### <Name of Feature 3>
 | ID | Requirement |
 | :-------------: | :----------: |
@@ -33,7 +33,7 @@ This document bring together the requirements set for our Trailhoppers project e
 | FR13 | There shall be tabs at the bottom of the screen. |
 | FR14 | There shall be login and settings screens. |
 | FR15 | There shall be a similar color scheme throughout the app. |
-| … | … |
+
 ## Non-Functional Requirements
 ### <Name of Feature 1>
 | ID | Requirement |
@@ -43,7 +43,7 @@ This document bring together the requirements set for our Trailhoppers project e
 | NFR3 | Username shall be 10 or less alphanumeric characters. |
 | NFR4 | Username shall not contain your password. |
 | NFR5 | Users shall not have the username of another user. |
-| … | … |
+
 ### <Name of Feature 2>
 | ID | Requirement |
 | :-------------: | :----------: |
@@ -52,7 +52,7 @@ This document bring together the requirements set for our Trailhoppers project e
 | NFR8 | There shall not be a delay between switching tabs. |
 | NFR9 | Users shall be able to use the tab key between text boxes. |
 | NFR10 | Users shall be able to update their own stats upon completion of a trail. |
-| … | … |
+
 ### <Name of Feature 3>
 | ID | Requirement |
 | :-------------: | :----------: |
@@ -61,7 +61,7 @@ This document bring together the requirements set for our Trailhoppers project e
 | NFR13 | User shall be placed on a timeout upon too many password attempts. |
 | NFR14 | Passwords shall be stored encrypted. |
 | NFR15 | Password shall be decrypted for validation. |
-| … | … |
+
 
 # Software Artifacts
   
