@@ -1,15 +1,12 @@
 # TrailHoppers
 
-Project description (~1 paragraph)
+A Trail exploring app for those who like to delve into the many parks and nature sports wherever they go. TrailHoppers is a Pyhton based application using the Kivy framework. It utilizes the Google Maps API to help users navigate from home to the many parks in their area. Creating an account is quite simple so we encourage you to try it out and start to investigate the world around you.
 
 ## Team Members and Roles
 
-* [Kassidy Ricketson](https://github.com/ricketsk/CIS-350-HW2-Ricketson) (Role 1, Role 2)
-* [Saif Fayed](https://github.com/saiffayed/CIS350-HW2-Fayed) (Role 3, Role 4)
-* [Liam Mazure](https://github.com/Mazureli/CIS350-HW2-Mazure) (Role 5, Role 6)
-* [KeJuan Farrell-Bey](https://github.com/kejua/CIS350-HW2-Farrell-Bey) (Role 7, Role 8)
-
-
-## Prerequisites
+* [Kassidy Ricketson](https://github.com/ricketsk/CIS-350-HW2-Ricketson)
+* [Saif Fayed](https://github.com/saiffayed/CIS350-HW2-Fayed)
+* [Liam Mazure](https://github.com/Mazureli/CIS350-HW2-Mazure)
+* [KeJuan Farrell-Bey](https://github.com/kejua/CIS350-HW2-Farrell-Bey)
 
 ## Run Instructions
