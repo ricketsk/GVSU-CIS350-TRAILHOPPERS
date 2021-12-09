@@ -16,7 +16,7 @@ ScreenManager:
 
             if self.login_state == 'in': app.local_id = self.localId
             if self.login_state == 'in': app.user_idToken = self.idToken
-            if self.login_state == 'in': app.display_user_tokens()
+            #if self.login_state == 'in': app.display_user_tokens()
             if self.login_state == 'in': screen_manager.current = 'example_screen'
 
 
@@ -25,9 +25,48 @@ ScreenManager:
         id: example_screen
         name: "example_screen"
         BoxLayout:
-            MDLabel:
-                id: the_label
+            orientation: 'vertical'
             MDRaisedButton:
+                
                 text: "Log out"
                 on_release:
                     app.sign_out()
+            MDLabel:
+                id: the_label
+            
+            BoxLayout:
+                orientation: 'horizontal'
+                MDBottomNavigation:
+                    panel_color: .2, .2, .2, 1
+
+                    MDBottomNavigationItem:
+                        name: 'screen 2'
+                        text: 'SEARCH'
+                        icon: 'magnify'
+                        # on_enter: root.switch()     
+                        FloatLayout:
+                            MDDropDownItem:
+                                id: dropdown_item
+                                pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+                                items:
+                                    on_press: 
+                                        map.printLabels
+                                dropdown_bg: [1,1,1,1]
+                            
+
+                    MDBottomNavigationItem:
+                        name: 'screen 1'
+                        text: 'HOME'   
+                        icon: 'home-variant-outline'
+                        MDLabel:
+                            text: 'Map Here'
+                            halign: 'center'
+
+
+                    MDBottomNavigationItem:
+                        name: 'screen 3'
+                        text: 'PROFILE'
+                        icon: 'account-circle-outline'
+                        MDLabel:
+                            text: 'Profile Info Here'
+                            halign: 'center'

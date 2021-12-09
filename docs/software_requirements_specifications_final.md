@@ -1,6 +1,6 @@
 # Overview
 
-This document brings together the requirements set for our Trailhoppers project earlier in the semester along with the other documents completed to ensure our understanding of the many stages to the software development process.
+This document brings together the requirements set earlier in the semester for our Trailhoppers Application along with the other documents completed. To ensure our understanding of the many stages to the software development process.
 
 # Software Requirements
 

@@ -1,4 +1,7 @@
+from kivy.uix.screenmanager import Screen
 from kivymd.app import MDApp
+from map import map
+
 
 class MainApp(MDApp):
     user_idToken = ""
