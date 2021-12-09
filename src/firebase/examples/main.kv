@@ -44,9 +44,14 @@ ScreenManager:
                         text: 'SEARCH'
                         icon: 'magnify'
                         # on_enter: root.switch()     
-                        MDTextField:
-                            hint_text: 'enter the trail'
-                            pos_hint: {"center_y": .95}
+                        FloatLayout:
+                            MDDropDownItem:
+                                id: dropdown_item
+                                pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+                                items:
+                                    on_press: 
+                                        map.printLabels
+                                dropdown_bg: [1,1,1,1]
                             
 
                     MDBottomNavigationItem:
