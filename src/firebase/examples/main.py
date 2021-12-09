@@ -11,7 +11,6 @@ import time
 from datetime import datetime
 from geopy.location import Location
 from geopy.geocoders import Nominatim
-from kivy.properties import NumericProperty
 
 api_key = "AIzaSyBdwkw6tlqH340Br0Hz1h1AieGkQg98f3I"
 
