@@ -11,15 +11,19 @@ import time
 from datetime import datetime
 from geopy.location import Location
 from geopy.geocoders import Nominatim
+from kivy.properties import NumericProperty
 
 api_key = "AIzaSyBdwkw6tlqH340Br0Hz1h1AieGkQg98f3I"
 
 # takes the current location of the user
 g = geocoder.ip('')
 # sets latitude and longitude to the current locations lat and long
+
 latitiude = g.lat
 longitude = g.lng
-"""
+list = []
+
+
 url = "https://maps.googleapis.com/maps/api/place/textsearch/json?"
 
 s = 'Trails near me'
@@ -45,12 +49,12 @@ for i in range(len(y)):
 
     # Print value corresponding to the
     # 'name' key at the ith index of y
-    print(y[i]['name'])
+    list.append(y[i]['name'])
 
     gmaps = googlemaps.Client(key=api_key)
 
-#def printLabels():
-#    print(labels)
+print(list)
+"""
 ######### make it text input box ##############
 input = input("Which trail would you like to go to? ")
 print("Going to: " + input)
@@ -80,6 +84,9 @@ print(directions_result[0]['legs'][0]['duration']['text'])
 
 """
 class MainApp(MDApp):
+    lat = latitiude
+    lon = longitude
+
     user_idToken = ""
     local_id = ""
 
@@ -89,6 +96,7 @@ class MainApp(MDApp):
     def sign_out(self):
         self.root.ids.firebase_login_screen.log_out()
         self.root.current = 'firebase_login_screen'
+
 
 MainApp().run()
 

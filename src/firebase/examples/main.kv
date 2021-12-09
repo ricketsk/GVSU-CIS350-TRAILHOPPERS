@@ -49,11 +49,14 @@ ScreenManager:
                     text: 'HOME'   
                     icon: 'home-variant-outline'
                     MapView:
-                        size_hint: 1,2
-                        lat: 42.913410
-                        lon: -85.695442
-                        zoom: 11
+                        lat: app.lat
+                        lon: app.lon
+                        zoom: 13
                         double_tap_zoom: True
+                        MapMarkerPopup:
+                            source: "map-marker.png"
+                            lat: app.lat
+                            lon: app.lon
 
                 MDBottomNavigationItem:
                     name: 'screen 3'
