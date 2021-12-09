@@ -21,6 +21,7 @@ destinationLatitude = ""
 destinationLongitude = ""
 labels = []
 
+
 class map:
 ######### create fxn ##################
 # url variable store url

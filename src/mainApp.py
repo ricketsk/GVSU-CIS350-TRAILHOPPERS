@@ -12,41 +12,10 @@ import Database
 class WelcomeWindow(Screen):
     pass 
 
-class LoginWindow(Screen):
-    userName = ObjectProperty(None)
-    passW = ObjectProperty(None)
-    def button(self):
-        print("Username:", self.userName.text,
-        "Password:", self.passW.text)
-        self.userName.text = ""
-        self.passW.text = ""
-    pass
-
-class StartWindow(Screen):
-    firstName = ObjectProperty(None)
-    lastName = ObjectProperty(None)
-    email = ObjectProperty(None)
-    passWord = ObjectProperty(None)
-
-    def button(self):
-        print("First Name:", self.firstName.text, 
-        "Last Name:", self.lastName.text, 
-        "Email:", self.email.text, 
-        "Password:", self.passWord.text)
-        self.firstName.text = ""
-        self.lastName.text = ""
-        self.email.text = ""
-        self.passWord.text = ""
-    pass
-
 class MainWindow(Screen):
     #self.theme_cls.theme_style = "Dark"
     #self.theme_cls.primary_palette = "Green"
     pass
-
-#class MapMainApp(Screen):
-    pass
-
 class WindowManager(ScreenManager):
     pass
 

@@ -4,6 +4,7 @@ from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy_garden.mapview import MapView, MapSource, MapMarker
 import geocoder
+from kivy.properties import NumericProperty
 from kivy_garden.mapview.view import MapMarker
 import requests, json
 import googlemaps
@@ -19,6 +20,10 @@ g = geocoder.ip('')
 # sets latitude and longitude to the current locations lat and long
 latitiude = g.lat
 longitude = g.lng
+
+lat =  NumericProperty(latitiude)
+long = NumericProperty(longitude)
+
 """
 url = "https://maps.googleapis.com/maps/api/place/textsearch/json?"
 
