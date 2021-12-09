@@ -25,48 +25,47 @@ ScreenManager:
         id: example_screen
         name: "example_screen"
         BoxLayout:
-            orientation: 'vertical'
-            MDRaisedButton:
-                
-                text: "Log out"
-                on_release:
-                    app.sign_out()
-            MDLabel:
-                id: the_label
-            
-            BoxLayout:
-                orientation: 'horizontal'
-                MDBottomNavigation:
-                    panel_color: .2, .2, .2, 1
+            orientation: 'horizontal'
+            MDBottomNavigation:
+                panel_color: .2, .2, .2, .2
 
-                    MDBottomNavigationItem:
-                        name: 'screen 2'
-                        text: 'SEARCH'
-                        icon: 'magnify'
-                        # on_enter: root.switch()     
-                        FloatLayout:
-                            MDDropDownItem:
-                                id: dropdown_item
-                                pos_hint: {'center_x': 0.5, 'center_y': 0.5}
-                                items:
-                                    on_press: 
-                                        map.printLabels
-                                dropdown_bg: [1,1,1,1]
+                MDBottomNavigationItem:
+                    name: 'screen 2'
+                    text: 'SEARCH'
+                    icon: 'magnify'
+                    # on_enter: root.switch()     
+                    FloatLayout:
+                        MDDropDownItem:
+                            id: dropdown_item
+                            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+                            #items:
+                            #    on_press: 
+                            #        map.printLabels
+                            #dropdown_bg: [1,1,1,1]
+                        
+
+                MDBottomNavigationItem:
+                    name: 'screen 1'
+                    text: 'HOME'   
+                    icon: 'home-variant-outline'
+                    MapView:
+                        size_hint: 1,2
+                        lat: 42.913410
+                        lon: -85.695442
+                        zoom: 11
+                        double_tap_zoom: True
+
+                MDBottomNavigationItem:
+                    name: 'screen 3'
+                    text: 'PROFILE'
+                    icon: 'account-circle-outline'
+                    MDLabel:
+                        text: 'Profile Info Here'
+                        halign: 'center'
+                    BoxLayout:
+                        orientation: 'vertical'
+                        MDRaisedButton:
                             
-
-                    MDBottomNavigationItem:
-                        name: 'screen 1'
-                        text: 'HOME'   
-                        icon: 'home-variant-outline'
-                        MDLabel:
-                            text: 'Map Here'
-                            halign: 'center'
-
-
-                    MDBottomNavigationItem:
-                        name: 'screen 3'
-                        text: 'PROFILE'
-                        icon: 'account-circle-outline'
-                        MDLabel:
-                            text: 'Profile Info Here'
-                            halign: 'center'
+                            text: "Log out"
+                            on_release:
+                                app.sign_out()
