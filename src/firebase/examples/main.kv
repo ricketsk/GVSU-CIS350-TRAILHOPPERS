@@ -35,15 +35,38 @@ ScreenManager:
                     icon: 'magnify'
                     # on_enter: root.switch()     
                     FloatLayout:
-                        MDDropDownItem:
-                            id: dropdown_item
-                            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
-                            #items:
-                            #    on_press: 
-                            #        map.printLabels
-                            #dropdown_bg: [1,1,1,1]
+                        MDRectangleFlatButton:
+                            text: app.list2[0]
+                            pos_hint: {"center_x": .5, "center_y": .95}
+                        MDRectangleFlatButton:
+                            text: app.list2[1]
+                            pos_hint: {"center_x": .5, "center_y": .85}
+                        MDRectangleFlatButton:
+                            text: app.list2[2]
+                            pos_hint: {"center_x": .5, "center_y": .75}
+                        MDRectangleFlatButton:
+                            text: app.list2[3]
+                            pos_hint: {"center_x": .5, "center_y": .65}
+                        MDRectangleFlatButton:
+                            text: app.list2[4]
+                            pos_hint: {"center_x": .5, "center_y": .55}
+                        MDRectangleFlatButton:
+                            text: app.list2[5]
+                            pos_hint: {"center_x": .5, "center_y": .45}
+                        MDRectangleFlatButton:
+                            text: app.list2[6]
+                            pos_hint: {"center_x": .5, "center_y": .35}
+                        MDRectangleFlatButton:
+                            text: app.list2[7]
+                            pos_hint: {"center_x": .5, "center_y": .25}
+                        MDRectangleFlatButton:
+                            text: app.list2[8]
+                            pos_hint: {"center_x": .5, "center_y": .15}
+                        MDRectangleFlatButton:
+                            text: app.list2[9]
+                            pos_hint: {"center_x": .5, "center_y": .05}
+                            
                         
-
                 MDBottomNavigationItem:
                     name: 'screen 1'
                     text: 'HOME'   
@@ -51,7 +74,7 @@ ScreenManager:
                     MapView:
                         lat: app.lat
                         lon: app.lon
-                        zoom: 13
+                        zoom: 12
                         double_tap_zoom: True
                         MapMarkerPopup:
                             source: "map-marker.png"

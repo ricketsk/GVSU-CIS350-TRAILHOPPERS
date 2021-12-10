@@ -52,7 +52,7 @@ for i in range(len(y)):
 
     gmaps = googlemaps.Client(key=api_key)
 
-print(list)
+
 """
 ######### make it text input box ##############
 input = input("Which trail would you like to go to? ")
@@ -82,9 +82,12 @@ print(directions_result[0]['legs'][0]['distance']['text'])
 print(directions_result[0]['legs'][0]['duration']['text'])
 
 """
+print(list)
+
 class MainApp(MDApp):
     lat = latitiude
     lon = longitude
+    list2 = list
 
     user_idToken = ""
     local_id = ""
