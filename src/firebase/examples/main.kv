@@ -90,18 +90,22 @@ ScreenManager:
                             source: "map-marker.png"
                             lat: app.lat
                             lon: app.lon
+                        #MapMarkerPopup:
+                         #   source: "map-marker2.png"
+                          #  lat: app.dlat
+                           # lon: app.dlong
 
                 MDBottomNavigationItem:
                     name: 'screen 3'
                     text: 'PROFILE'
                     icon: 'account-circle-outline'
-                    padding: '10dp'
                     BoxLayout:
                         orientation: 'vertical'
                         MDRaisedButton:
                             text: "Log out"
                             on_release:
                                 app.sign_out()
+                       
                         BoxLayout:
                             orientation: 'vertical'
 
