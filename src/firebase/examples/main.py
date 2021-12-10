@@ -59,30 +59,15 @@ input = input("Which trail would you like to go to? ")
 print("Going to: " + input)
 
 ############# new fxn ########################
-app = Nominatim(user_agent="tutorial")
-location = app.geocode(input).raw
-
-address = input
-
-def getLocationByAddress(address):
-    app = Nominatim(user_agent="tutorial2")
-    time.sleep(1)
-    try:
-        return app.geocode(address).raw
-    except:
-        return getLocationByAddress(address)
-
-location = getLocationByAddress(address)
-destinationLatitude = location["lat"]
-destinationLongitude = location["lon"]
-
-now = datetime.now()
-directions_result = gmaps.directions((latitiude,longitude), (destinationLatitude,destinationLongitude), mode="driving",departure_time=now)
-print(directions_result[0]['legs'][0]['distance']['text'])
-print(directions_result[0]['legs'][0]['duration']['text'])
 
 """
-print(list)
+# def getLocationByAddress(address):
+#         app = Nominatim(user_agent="tutorial2")
+#         time.sleep(1)
+#         try:
+#             return app.geocode(address).raw
+#         except:
+#             return getLocationByAddress(address)
 
 class MainApp(MDApp):
     lat = latitiude
@@ -98,6 +83,24 @@ class MainApp(MDApp):
     def sign_out(self):
         self.root.ids.firebase_login_screen.log_out()
         self.root.current = 'firebase_login_screen'
+
+    def getLocationByAddress(self, address):
+        app = Nominatim(user_agent="tutorial2")
+        time.sleep(1)
+        try:
+            return app.geocode(address).raw
+        except:
+            return self.getLocationByAddress(address)
+    def getTrail(self, input):
+        app = Nominatim(user_agent="tutorial")
+        location = self.getLocationByAddress(input)
+        destinationLatitude = location["lat"]
+        destinationLongitude = location["lon"]
+        now = datetime.now()
+        directions_result = gmaps.directions((latitiude,longitude), (destinationLatitude,destinationLongitude), mode="driving",departure_time=now)
+        print(directions_result[0]['legs'][0]['distance']['text'])
+        print(directions_result[0]['legs'][0]['duration']['text'])
+
 
 
 MainApp().run()

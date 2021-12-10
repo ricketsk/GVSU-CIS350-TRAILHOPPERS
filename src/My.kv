@@ -35,9 +35,17 @@ WindowManager:
             text: 'HOME'   
             icon: 'home-variant-outline'
             MapView:
-                lat: str(root.lat)
-                lon: str(root.long)
+                lat: 42.331429
+                #root.lat
+                lon: -83.045753
+                #root.long
                 zoom: 11
+                MapMarker:
+                    id: map_view_marker
+                    lat: 42.331429
+                    #app.lat
+                    lon: -83.045753
+                    #app.long
         
 
 
@@ -56,7 +64,7 @@ WindowManager:
             text: 'PROFILE'
             icon: 'account-circle-outline'
             MDLabel:
-                text: 'Profile Info Here'
+                text: 'First'
                 halign: 'center'
 
         
