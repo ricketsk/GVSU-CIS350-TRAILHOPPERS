@@ -10,3 +10,9 @@ A Trail exploring app for those who like to delve into the many parks and nature
 * [KeJuan Farrell-Bey](https://github.com/kejua/CIS350-HW2-Farrell-Bey)
 
 ## Run Instructions
+
+1) Install Python >= 3.4 [right here](https://www.python.org/downloads/)
+2) Install Kivy [right here](https://kivy.org/doc/stable/gettingstarted/installation.html)
+3) 
+4) Clone our repository to your local device.
+5) Then run main.py 
