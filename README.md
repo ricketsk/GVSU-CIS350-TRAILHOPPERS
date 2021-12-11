@@ -1,6 +1,6 @@
 # TrailHoppers
 
-A Trail exploring app for those who like to delve into the many parks and nature spots wherever they go. TrailHoppers is a Pyhton based application using the Kivy framework. It utilizes the Google Maps API to help users navigate from home to the many parks in their area. Creating an account is quite simple so we encourage you to try it out and start to investigate the world around you.
+A Trail exploring app for those who like to delve into the many parks and nature spots wherever they go. TrailHoppers is a Python based application using the Kivy framework. It utilizes the Google Maps API to help users navigate from home to the many parks in their area. Creating an account is quite simple so we encourage you to try it out and start to investigate the world around you.
 
 ## Team Members and Roles
 
@@ -10,3 +10,9 @@ A Trail exploring app for those who like to delve into the many parks and nature
 * [KeJuan Farrell-Bey](https://github.com/kejua/CIS350-HW2-Farrell-Bey)
 
 ## Run Instructions
+
+1) Install Python >= 3.4 [right here](https://www.python.org/downloads/)
+2) Install Kivy [right here](https://kivy.org/doc/stable/gettingstarted/installation.html)
+3) 
+4) Clone our repository to your local device.
+5) Then run main.py 

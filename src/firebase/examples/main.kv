@@ -9,7 +9,7 @@ ScreenManager:
         remember_user: True
         require_email_verification: True
         web_api_key: "AIzaSyCpXA55IalmjiZnRWqloBUYlktrjI8l0eI" # This should be YOUR web_api_key
-        background: "background.jpg"
+        background: "Background.jpeg"
         on_login_success:
             if self.login_state == 'in': print("User has logged in. Unique identifier is ", self.localId)
             if self.login_state == 'out': print("User signed out")
@@ -38,33 +38,43 @@ ScreenManager:
                         MDRectangleFlatButton:
                             text: app.list2[0]
                             pos_hint: {"center_x": .5, "center_y": .95}
+                            on_release: app.getTrail(str(app.list2[0]))
                         MDRectangleFlatButton:
                             text: app.list2[1]
                             pos_hint: {"center_x": .5, "center_y": .85}
+                            on_release: app.getTrail(str(app.list2[1]))
                         MDRectangleFlatButton:
                             text: app.list2[2]
                             pos_hint: {"center_x": .5, "center_y": .75}
+                            on_release: app.getTrail(str(app.list2[2]))                            
                         MDRectangleFlatButton:
                             text: app.list2[3]
                             pos_hint: {"center_x": .5, "center_y": .65}
+                            on_release: app.getTrail(str(app.list2[3]))
                         MDRectangleFlatButton:
                             text: app.list2[4]
                             pos_hint: {"center_x": .5, "center_y": .55}
+                            on_release: app.getTrail(str(app.list2[4]))
                         MDRectangleFlatButton:
                             text: app.list2[5]
                             pos_hint: {"center_x": .5, "center_y": .45}
+                            on_release: app.getTrail(str(app.list2[5]))
                         MDRectangleFlatButton:
                             text: app.list2[6]
                             pos_hint: {"center_x": .5, "center_y": .35}
+                            on_release: app.getTrail(str(app.list2[6]))
                         MDRectangleFlatButton:
                             text: app.list2[7]
                             pos_hint: {"center_x": .5, "center_y": .25}
+                            on_release: app.getTrail(str(app.list2[7]))
                         MDRectangleFlatButton:
                             text: app.list2[8]
                             pos_hint: {"center_x": .5, "center_y": .15}
+                            on_release: app.getTrail(str(app.list2[8]))
                         MDRectangleFlatButton:
                             text: app.list2[9]
                             pos_hint: {"center_x": .5, "center_y": .05}
+                            on_release: app.getTrail(str(app.list2[9]))
                             
                         
                 MDBottomNavigationItem:
@@ -80,18 +90,36 @@ ScreenManager:
                             source: "map-marker.png"
                             lat: app.lat
                             lon: app.lon
+                        #MapMarkerPopup:
+                         #   source: "map-marker2.png"
+                          #  lat: app.dlat
+                           # lon: app.dlong
 
                 MDBottomNavigationItem:
                     name: 'screen 3'
                     text: 'PROFILE'
                     icon: 'account-circle-outline'
-                    MDLabel:
-                        text: 'Profile Info Here'
-                        halign: 'center'
                     BoxLayout:
                         orientation: 'vertical'
                         MDRaisedButton:
-                            
                             text: "Log out"
                             on_release:
                                 app.sign_out()
+                       
+                        BoxLayout:
+                            orientation: 'vertical'
+
+
+                            MDTextField:
+                                hint_text: 'Username'
+                                halign: 'center'
+                                pos_hint: {"center_y": .7}
+                            MDTextField:
+                                hint_text: 'First Name'
+                                halign: 'center'
+                                pos_hint: {"center_x": .5,"center_y": .5}
+                            MDTextField:
+                                hint_text: 'Last Name'
+                                halign: 'center'
+                                pos_hint: {"center_x": .5,"center_y": .3}
+                        

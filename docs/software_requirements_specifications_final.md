@@ -23,7 +23,7 @@ Below are our 15 Functional and 15 Non-Functional requirements
 | FR7 | Maps shall be downloadable for offline use. |
 | FR8 | Users shall be able to search for trails. |
 | FR9 | Users shall be able to get directions to trails. |
-| FR10 | There shall be a marker for users current location. |
+| FR10 | There shall be a marker for user's current location. |
 
 ### The look of the app
 | ID | Requirement |
@@ -38,7 +38,7 @@ Below are our 15 Functional and 15 Non-Functional requirements
 ### User Data
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR1 | Users logins passwords shall be 8 alphanumeric characters. |
+| NFR1 | User's login passwords shall be 8 alphanumeric characters. |
 | NFR2 | Passwords shall be encrypted at login. |
 | NFR3 | Username shall be 10 or less alphanumeric characters. |
 | NFR4 | Username shall not contain your password. |
@@ -65,7 +65,7 @@ Below are our 15 Functional and 15 Non-Functional requirements
 
 # Software Artifacts
   
-This sections is a culmination of the work our group completed as a part of the software development process.
+This section is a culmination of the work our group completed as a part of the software development process.
   
 * [Proposal](https://github.com/ricketsk/GVSU-CIS350-TRAILHOPPERS/blob/master/docs/proposal-template.md)
 * [Tasks](https://github.com/ricketsk/GVSU-CIS350-TRAILHOPPERS/blob/master/docs/Tasks.md)

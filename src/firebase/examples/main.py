@@ -11,6 +11,8 @@ import time
 from datetime import datetime
 from geopy.location import Location
 from geopy.geocoders import Nominatim
+from kivymd.theming import ThemeManager
+
 
 api_key = "AIzaSyBdwkw6tlqH340Br0Hz1h1AieGkQg98f3I"
 
@@ -20,6 +22,7 @@ g = geocoder.ip('')
 
 latitiude = g.lat
 longitude = g.lng
+
 list = []
 
 
@@ -59,38 +62,37 @@ input = input("Which trail would you like to go to? ")
 print("Going to: " + input)
 
 ############# new fxn ########################
-app = Nominatim(user_agent="tutorial")
-location = app.geocode(input).raw
-
-address = input
-
-def getLocationByAddress(address):
-    app = Nominatim(user_agent="tutorial2")
-    time.sleep(1)
-    try:
-        return app.geocode(address).raw
-    except:
-        return getLocationByAddress(address)
-
-location = getLocationByAddress(address)
-destinationLatitude = location["lat"]
-destinationLongitude = location["lon"]
-
-now = datetime.now()
-directions_result = gmaps.directions((latitiude,longitude), (destinationLatitude,destinationLongitude), mode="driving",departure_time=now)
-print(directions_result[0]['legs'][0]['distance']['text'])
-print(directions_result[0]['legs'][0]['duration']['text'])
 
 """
-print(list)
+# def getLocationByAddress(address):
+#         app = Nominatim(user_agent="tutorial2")
+#         time.sleep(1)
+#         try:
+#             return app.geocode(address).raw
+#         except:
+#             return getLocationByAddress(address)
+destlat = ''
+destlong = ''
 
 class MainApp(MDApp):
     lat = latitiude
     lon = longitude
     list2 = list
+    dlat = destlat
+    dlong = destlong
+    
+
+    
+
+
 
     user_idToken = ""
     local_id = ""
+
+    def build(self):
+        theme_cls = ThemeManager()
+        self.theme_cls.primary_palette = "Green"
+        self.theme_cls.theme_style = "Dark"
 
     def display_user_tokens(self):
         self.root.ids.the_label.text = "local_id: " + self.local_id + "\n user_idToken: " + self.user_idToken
@@ -98,6 +100,28 @@ class MainApp(MDApp):
     def sign_out(self):
         self.root.ids.firebase_login_screen.log_out()
         self.root.current = 'firebase_login_screen'
+
+    def getLocationByAddress(self, address):
+        app = Nominatim(user_agent="tutorial2")
+        time.sleep(1)
+        try:
+            return app.geocode(address).raw
+        except:
+            return self.getLocationByAddress(address)
+    def getTrail(self, input):
+        app = Nominatim(user_agent="tutorial")
+        location = self.getLocationByAddress(input)
+        destinationLatitude = location["lat"]
+        destinationLongitude = location["lon"]
+        destlat = destinationLatitude
+        destlong = destinationLongitude
+        now = datetime.now()
+        directions_result = gmaps.directions((latitiude,longitude), (destinationLatitude,destinationLongitude), mode="driving",departure_time=now)
+        print(directions_result[0]['legs'][0]['distance']['text'])
+        print(directions_result[0]['legs'][0]['duration']['text'])
+    
+
+
 
 
 MainApp().run()

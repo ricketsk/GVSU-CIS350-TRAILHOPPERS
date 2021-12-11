@@ -6,7 +6,7 @@
 3) Responsible: All
 
 ## Use-Cases
-1) Description: Organized and demonstrated the intercation of the use cases with the actors
+1) Description: Organized and demonstrated the interaction of the use cases with the actors
 2) Expected time to complete: 1 weeks
 3) Responsible: All
 
@@ -16,12 +16,12 @@
 3) Responsible: All
 
 ## Map API integration
-1) Description: Watching videos of how to integrate a map api into kivy.
+1) Description: Watching videos of how to integrate a map API into kivy.
 2) Expected time to complete: 2 weeks
 3) Responsible: Kassidy, Liam
 
 ## Interface
-1) Description: Learn how to organize the interface to enable the placemant of widgets and user interaction.
+1) Description: Learn how to organize the interface to enable the placement of widgets and user interaction.
 2) Expected time to complete: 2 weeks
 3) Responsible: Saif
 
@@ -46,10 +46,10 @@
 3) Learned Kivy
 4) Integrated Google Maps
 5) Interface has been made
+6) 4) Created a database for storing user information
 
 ## Not Completed
-1) StopWatch widget
+1) Stopwatch widget
 2) Backend Testing
 3) Frontend Testing
-4) Created a database for storing user information
 5) User Social Interaction
