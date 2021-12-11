@@ -13,7 +13,7 @@ A Trail exploring app for those who like to delve into the many parks and nature
 
 + Install Python >= 3.4 [right here](https://www.python.org/downloads/)
 + Install Kivy [right here](https://kivy.org/doc/stable/gettingstarted/installation.html)
-+ You will then need to install 
++ You will then need to install the following through your terminal 
     1) item 1
     2) item 2
     3) item 3
