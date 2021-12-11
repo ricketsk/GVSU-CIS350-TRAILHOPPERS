@@ -20,5 +20,5 @@ A Trail exploring app for those who like to delve into the many parks and nature
     3) item 3
 
 + Clone our repository to your local device.
-+ Go to GVSU-CIS350-TRAILHOPPERS/src/firebase/examples/main.py in the repository
++ Go to GVSU-CIS350-TRAILHOPPERS/src/firebase/examples/main.py
 + Then run main.py 
