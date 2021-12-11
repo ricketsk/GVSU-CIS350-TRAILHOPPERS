@@ -14,9 +14,9 @@ A Trail exploring app for those who like to delve into the many parks and nature
 + Install Python >= 3.4 [right here](https://www.python.org/downloads/)
 + Install Kivy [right here](https://kivy.org/doc/stable/gettingstarted/installation.html)
 + You will then need to install 
-    i) item 1
-    ii) item 2
-    iii) item 3
+    a) item 1
+    b) item 2
+    c) item 3
 
 + Clone our repository to your local device.
 + Go to GVSU-CIS350-TRAILHOPPERS/src/firebase/examples/main.py in the repository
