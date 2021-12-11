@@ -14,7 +14,7 @@ Google Maps (if allowed)
 # Method/Approach
 
 * We are going to start by learning how to use Kivy - find out how integrate maps into an app.
-* Reasearch and development for the demographics of who will be using the app.
+* Reseaarch and development for the demographics of who will be using the app.
 * Planned weekly meetings each week for our progress and what is to come.
 * Learn how to use GUIs.
 
@@ -29,7 +29,7 @@ Google Maps (if allowed)
 
 # Anticipated Problems
 
-* GUIs
+* GUI
 * Map integration
 * Deployment
 * Git problems - merging, pulling
