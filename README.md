@@ -15,7 +15,7 @@ A Trail exploring app for those who like to delve into the many parks and nature
 + Install Kivy [right here](https://kivy.org/doc/stable/gettingstarted/installation.html)
 + You will then need to install the following through your terminal 
     1) pip install kivymd
-    2) item 2
+    2) pip install kivy-garden
     3) item 3
 
 + Clone our repository to your local device.
