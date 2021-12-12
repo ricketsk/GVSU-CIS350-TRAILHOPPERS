@@ -17,10 +17,11 @@ A Trail exploring app for those who like to delve into the many parks and nature
 + You will then need to install the following through your terminal 
     1) pip install kivymd
     2) pip install kivy-garden
-    3) pip install geopy
-    4) pip install geocoder
-    5) pip install gmaps
-    6) pip install googlemaps
+    3) pip install kivy-garden.mapview
+    4) pip install geopy
+    5) pip install geocoder
+    6) pip install gmaps
+    7) pip install googlemaps
 
 + Clone our repository to your local device.
 + Go to GVSU-CIS350-TRAILHOPPERS/src/firebase/examples/main.py
